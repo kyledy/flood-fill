@@ -1,0 +1,21 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/k/kyledy/cs221/pa2'
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic imageTileColorPicker.cpp -o imageTileColorPicker.o
+ 
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic negativeColorPicker.cpp -o negativeColorPicker.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic censorColorPicker.cpp -o censorColorPicker.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic solidColorPicker.cpp -o solidColorPicker.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic rainbowColorPicker.cpp -o rainbowColorPicker.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic testFills.cpp -o testFills.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic priority.cpp -o priority.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic animation.cpp -o animation.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic cs221util/lodepng/lodepng.cpp -o lodepng.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic cs221util/HSLAPixel.cpp -o HSLAPixel.o
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic cs221util/PNG.cpp -o PNG.o
+clang++ imageTileColorPicker.o negativeColorPicker.o censorColorPicker.o solidColorPicker.o rainbowColorPicker.o testFills.o priority.o animation.o lodepng.o HSLAPixel.o PNG.o -std=c++1y -stdlib=libc++ -lc++abi -lpthread -lm -o testFills
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic testStackQueue.cpp -o testStackQueue.o
+clang++ testStackQueue.o -std=c++1y -stdlib=libc++ -lc++abi -lpthread -lm -o testStackQueue
+clang++ -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic testPriority.cpp -o testPriority.o
+clang++ testPriority.o priority.o lodepng.o HSLAPixel.o PNG.o -std=c++1y -stdlib=libc++ -lc++abi -lpthread -lm -o testPriority
+make: Leaving directory '/home/k/kyledy/cs221/pa2'
+ 
